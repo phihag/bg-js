@@ -1,0 +1,22 @@
+CACHE MANIFEST
+
+# version 3
+# files-checksum: a3c959de7749704afb3ce91764f5cf11 *-
+
+CACHE:
+DroidSans.ttf
+jquery-1.4.4.min.js
+json-compat.js
+
+# <non-debug>
+#~bg.css
+#~bg.js
+# </non-debug>
+
+# These files are regularly updated during development
+# Offline versions are identical (realized via mod_redirect, see .htaccess)
+# <debug>
+FALLBACK:
+bg.css offline-bg.css
+bg.js offline-bg.js
+# </debug>

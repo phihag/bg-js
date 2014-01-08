@@ -1,0 +1,14 @@
+AddType image/vnd.microsoft.icon .cur
+AddType application/x-font-ttf .ttf
+AddType text/cache-manifest .manifest
+
+<IfModule mod_expires.c>
+ExpiresByType text/cache-manifest "access plus 0 seconds"
+</IfModule>
+
+# rewrite during development (see bg.manifest for details)
+<IfDefine !bgjs_debug_false>
+RewriteEngine On
+RewriteRule offline-bg.css bg.css
+RewriteRule offline-bg.js bg.js
+</IfDefine>

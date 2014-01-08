@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Updates the manifest version to the current md5sum of all files
+md5=$(md5sum -b bg.css bg.js index.html | md5sum -b -)
+
+sed "s/\(files-checksum:\).*/\1 ${md5}/" -i bg.manifest 
+
+

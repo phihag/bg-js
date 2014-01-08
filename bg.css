@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Droid Sans';
+	src: url('DroidSans.eot'); /* IE */
+	src: local('Droid Sans'), local('DroidSans'), url('DroidSans.ttf') format('truetype');
+}
+
+html,body {margin: 0; padding: 0;}
+.nocursor {cursor: none;}
+body {background: #000; color: #888; font-family: 'Droid Sans',sans-serif;}
+#messages {position: absolute; left: 1.5em; bottom: 1em; background: #000; background: rgba(0, 0, 0, 0.5); z-index: 100; color: #ccc; }
+#messages>div {white-space: pre-wrap;}
+
+#clock {z-index: -10;}
+.clock-extended {position: absolute; left: 0; width: 100%; margin-top: -3em;top: 50%;}
+.clock-extended>.time {font-size: 400%; text-align: center;}
+.clock-extended>.date {font-size: 200%; text-align: center;}
+.clock-simple {position: absolute; text-align: center; top: 0;left: 0; width: 100%; right: 0; line-height: 1; overflow: hidden;}
+.clock-simple-bottom-right {font-size: 150%; color: #222;}
+.clock-extended-bottom-right {color: #555;}
+.clock-extended-bottom-right>.time {font-size: 200%; text-align: center;}
+.clock-extended-bottom-right>.date {font-size: 100%; text-align: center;}
+.clock-bright {color: #777 !important;}
+.clock-simple-bottom-right,.clock-extended-bottom-right {position: absolute; right: 0.4em; bottom: 0.3em;}
+.clock-analog{position: absolute; left: 0; right: 0;}
+
+.updateBannerOuterContainer {position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: table; cursor: auto;}
+.updateBannerContainer {display: table-cell; vertical-align: middle;}
+.updateBanner {text-align: center; background: #000; background: rgba(0, 0, 0, 0.95); margin: 0 auto; border: 1px dotted #222;
+	width: 40em;}
+.updateBanner:focus {border-color: #333; outline: none;}
+.updateBanner>span{display: block; font-size: 200%; padding: 0.3em 0;}
+.updateBanner>div{
+	font-size: 300%; cursor:pointer; display: inline-block;
+	padding: 0.2em 0.5em; margin: 0.3em 0.5em; border: 1px solid #666; border-radius: 0.1em;
+	background: #222; color: #afafaf;
+}
+.updateBanner>div:focus {background: #444; outline: none; border-color: #aaa;}
+.updateBanner>div:active {background: #888;}
+.updateBanner>div:first-letter {color: #eee;}
+.remSecondsBanner {}
+
+progress,.progress {display:block; width: 85%; margin: 0 auto; text-align: center;}
+
+.inverted body {background: #fff !important;}
+.inverted #messages {color: #5f5f5f; background: #fff; background: rgba(255, 255, 255, 0.5);}
+.inverted .clock-simple {color: #aaa;}
+.inverted .clock-extended {color: #999;}
+.inverted .clock-simple-bottom-right {color: #bbb;}
+.inverted .clock-extended-bottom-right {color: #999;}
+.inverted .clock-bright {color: #666 !important;}
