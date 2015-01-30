@@ -476,6 +476,7 @@ function onKeyDown(ev) {
 	case 116: // F5
 	case 122: // F11
 		return true;
+	case 219: // ?
 	case 72: // h
 		message(
 			'Esc - Restore a black screen\n' +
